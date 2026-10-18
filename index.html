@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kiroles Yosry — Video Editor &amp; Motion Graphics</title>
+<meta name="description" content="Kiroles Yosry — video editing and motion graphics portfolio. Based in Egypt, available for remote work.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#07090b">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span><span data-t="brandName">Kiroles Yosry</span></a>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="kicker" data-t="kicker">Portfolio · Egypt · Remote</p>
+    <h1><span data-t="heroLine1">Video editing that</span><br><span class="accent" data-t="heroLine2">actually tells a story.</span></h1>
+    <p class="lede" data-t="lede">I edit and produce video — motion graphics, client reels, and social-ready cuts — in CapCut, built for fast turnaround without cutting corners.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#work" data-t="ctaWork">See the work</a>
+      <a class="btn" href="#contact" data-t="ctaContact">Get in touch</a>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Video Editing</span><span>Motion Graphics</span><span>CapCut</span><span>Social Cuts</span><span>Client Reels</span><span>Fast Turnaround</span>
+      <span>Video Editing</span><span>Motion Graphics</span><span>CapCut</span><span>Social Cuts</span><span>Client Reels</span><span>Fast Turnaround</span>
+    </div>
+  </div>
+
+  <section class="section wrap" id="work">
+    <div class="section-head reveal">
+      <h2 data-t="workTitle">Selected work</h2>
+      <span class="section-num" data-t="workCount">03 reels</span>
+    </div>
+    <div class="grid reveal-stagger" id="reelGrid"></div>
+  </section>
+
+  <section class="section wrap" id="skills">
+    <div class="section-head reveal">
+      <h2 data-t="skillsTitle">What I bring</h2>
+    </div>
+    <div class="chips reveal">
+      <span class="chip" data-t="skill1">Video editing</span>
+      <span class="chip" data-t="skill2">Motion graphics</span>
+      <span class="chip" data-t="skill3">CapCut</span>
+      <span class="chip" data-t="skill4">Social-format cuts</span>
+      <span class="chip" data-t="skill5">Fast turnaround</span>
+      <span class="chip" data-t="skill6">Attention to detail</span>
+      <span class="chip" data-t="skill7">Arabic &amp; English</span>
+      <span class="chip" data-t="skill8">Remote-ready</span>
+    </div>
+  </section>
+
+  <section class="section wrap" id="contact">
+    <div class="contact-card reveal">
+      <h2 data-t="contactTitle">Let's work together</h2>
+      <div class="contact-list">
+        <div class="contact-row">
+          <span class="k" data-t="emailLabel">Email</span>
+          <a class="v" id="emailVal" href="mailto:Kirolesyosry26@gmail.com">Kirolesyosry26@gmail.com</a>
+          <button class="copy-btn" type="button" data-copy="Kirolesyosry26@gmail.com" data-t="copy">Copy</button>
+        </div>
+        <div class="contact-row">
+          <span class="k" data-t="phoneLabel">Phone</span>
+          <a class="v" href="tel:+201226716483">+20 122 671 6483</a>
+          <button class="copy-btn" type="button" data-copy="+20 122 671 6483" data-t="copy">Copy</button>
+        </div>
+        <div class="contact-row">
+          <span class="k" data-t="linkedinLabel">LinkedIn</span>
+          <a class="v" href="https://www.linkedin.com/in/kiroles-yosry-1a099a357" target="_blank" rel="noopener">linkedin.com/in/kiroles-yosry</a>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-t="footerNote">Kiroles Yosry — Video editing &amp; motion graphics, based in Egypt, available remote.</p>
+    <a class="manage-link" href="https://claude.ai/artifact/7cEg3CR5FjX7BKd313xQdy" target="_blank" rel="noopener" title="Manage videos">⚙ manage</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="lightbox-inner">
+    <video id="lightboxVideo" controls controlslist="nodownload noremoteplayback" disablepictureinpicture disableremoteplayback playsinline></video>
+    <div class="lightbox-bar">
+      <h3 id="lightboxTitle"></h3>
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">✕</button>
+    </div>
+  </div>
+</div>
+
+<script src="videos.data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
